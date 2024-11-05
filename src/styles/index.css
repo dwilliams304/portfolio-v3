@@ -1,0 +1,31 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  
+  /* Colors */
+  --primaryColor: #02F0A1;
+  --primaryColor_Highlight: #73FACD;
+  --secondaryColor: #F00251;
+  --backgroundColor: #1E2526;
+  --textColor: #F7FFFD;
+  --textColor_Dark: #272727;
+
+  /* Text sizes */
+  --txt_SM: none;
+  --txt_MD: none;
+  --txt_LG: none;
+
+  /* Padding */
+  --pd_SM: none;
+  --pd_MD: none;
+  --pd_LG: none;
+
+  /* Shadows */
+  --shd_SM: none;
+  --shd_MD: none;
+  --shd_LG: none;
+}
+
+body {
+  background-color: var(--backgroundColor);
+  color: var(--textColor)
+}
