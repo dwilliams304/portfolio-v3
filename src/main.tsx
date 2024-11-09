@@ -14,7 +14,11 @@ import {
   DummyProjectData 
 } from "./data/DummyProjectData";
 
-import Projects from "./components/Projects";
+import { 
+  Header, 
+  MainCard, 
+  Projects 
+} from "./components";
 
 
 createRoot(document.getElementById("root")!).render(
@@ -32,11 +36,12 @@ export function App(){
   }, [])
 
   return(
-    <>
-      <h1>daviswilliams.dev</h1>
+    <div className="site-container">
+      <Header />
+      <MainCard />
       <Projects 
         projects={projects}
       />
-    </>
+    </div>
   )
 }

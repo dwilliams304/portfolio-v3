@@ -1,0 +1,32 @@
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+header h1 {
+    border: 1px dashed var(--primaryColor);
+    background-color: var(--backgroundColor_Dark);
+    font-size: 28px;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+header div {
+    display: flex;
+    gap: 0 1rem ;
+}
+
+header button {
+    padding: 1rem;
+    width: 100px;
+    border: 1px dashed var(--primaryColor);
+    background-color: var(--backgroundColor_Dark);
+    color: var(--primaryColor);
+}
+
+.main-card {
+    background-color: var(--backgroundColor_Dark);
+    padding: 1rem;
+}
