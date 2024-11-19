@@ -1,3 +1,4 @@
+
 export type Project = {
     project_name: string;
     project_img: string;
@@ -5,3 +6,4 @@ export type Project = {
     project_description: string;
     links: string[];
 }
+
