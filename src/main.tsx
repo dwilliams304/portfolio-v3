@@ -17,7 +17,8 @@ import {
 import { 
   Header, 
   MainCard, 
-  Projects 
+  Projects,
+  SectionsList
 } from "./components";
 
 
@@ -38,6 +39,7 @@ export function App(){
   return(
     <div className="site-container">
       <Header />
+      <SectionsList />
       <MainCard />
       <Projects 
         projects={projects}

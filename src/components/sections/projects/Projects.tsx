@@ -1,5 +1,5 @@
-import { Project } from "../data/types";
-import { IconMapper } from "../data/IconMapper";
+import { Project } from "../../../data/types";
+import { IconMapper } from "../../../data/IconMapper";
 
 type ProjectsListProps = {
     projects: Project[];
