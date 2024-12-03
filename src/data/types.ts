@@ -1,9 +1,8 @@
 
 export type Project = {
-    project_name: string;
-    project_img: string;
-    tech_used: string[];
-    project_description: string;
+    projectName: string;
+    projectImg: string;
+    techUsed: string[];
+    projectDescription: string;
     links: string[];
 }
-

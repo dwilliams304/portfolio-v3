@@ -15,10 +15,10 @@ import {
 } from "./data/DummyProjectData";
 
 import { 
+  CustomizationBar,
+  SectionsList,
   Header, 
   MainCard, 
-  Projects,
-  SectionsList
 } from "./components";
 
 
@@ -38,12 +38,10 @@ export function App(){
 
   return(
     <div className="site-container">
-      <Header />
+      <CustomizationBar />
       <SectionsList />
+      <Header />
       <MainCard />
-      <Projects 
-        projects={projects}
-      />
     </div>
   )
 }

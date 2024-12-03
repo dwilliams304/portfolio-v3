@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { RandomHeaders } from "../../data/RandomHeaders";
-import "../styles/components.css";
+import "../../styles/components.css";
 
 export default function Header(){
     const [headerText, setHeaderText] = useState("daviswilliams.dev");
