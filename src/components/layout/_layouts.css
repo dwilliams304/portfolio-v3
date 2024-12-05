@@ -25,8 +25,6 @@ header h1:hover {
 }
 
 
-
-
 /* Sections List */
 .sl-container {
     position: absolute;
@@ -67,9 +65,9 @@ header h1:hover {
     top: 0; left: 0;
     width: 100%;
     height: 12vh;
-    background: linear-gradient(180deg, rgba(3,11,11,1) 0%, rgba(0,0,0,0) 100%);
+    /* background: linear-gradient(180deg, rgba(3,11,11,1) 0%, rgba(0,0,0,0) 100%); */
 
-    display: none;
+    /* display: none; */
 }
 
 .cb-container {
@@ -79,18 +77,38 @@ header h1:hover {
     padding: 5vh 0;
     display: flex;
     justify-content: space-around;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(7px);
     background: rgba(0, 0, 0, 0.316);
-    border: 1px solid var(--secondaryColor);
+    border: 2px solid var(--primaryColor);
     border-radius: 25px;
 
     box-shadow: var(--shd_LG);
 }
+.cb-container div label {
+    display: block;
+    text-align: center;
+    padding-bottom: 6px;
+    font-size: 22px;
+}
 .cb-container select,
 .cb-container button {
     background: none;
-    border: 1px inset var(--secondaryColor);
+    border: 1px solid var(--primaryColor);
     border-radius: 15px;
     color: var(--textColor);
     padding: 10px 25px;
+    width: 200px;
+    padding: 12px;
+    font-size: 16px;
+}
+
+.cb-container option {
+    background: var(--backgroundColor_Dark);
+    margin: 0;
+    padding: 4px 12px;
+    border: none;
+}
+
+.cb-container select option:hover {
+    background: var(--primaryColor);
 }
