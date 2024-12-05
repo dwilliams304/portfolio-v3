@@ -1,7 +1,7 @@
 export default function SectionsList(){
     return(
         <div className="sl-container">
-            <h2 className="sl-header">Sections</h2>
+            <h2 className="sl-header txt-highlight-p-cul">Sections</h2>
             <ul className="sl-list">
                 <li>
                     <span className="txt-underline-effect">Home</span>

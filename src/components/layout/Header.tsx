@@ -2,7 +2,7 @@ import { useState } from "react";
 import { RandomHeaders } from "../../data/RandomHeaders";
 
 export default function Header(){
-    const [headerText, setHeaderText] = useState("daviswilliams.dev");
+    const [headerText, setHeaderText] = useState("daviswilliams");
 
     const setRandomHeaderText = () => {
         var rand = Math.floor(Math.random() * RandomHeaders.length);

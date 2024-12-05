@@ -5,6 +5,7 @@ import { StrictMode,
 import { createRoot } from "react-dom/client";
 import "./styles/reset.css";
 import "./styles/index.css";
+import "./styles/sections.css";
 
 import { 
   Project 
@@ -20,6 +21,7 @@ import {
   Header, 
   MainCard, 
 } from "./components";
+import NebulaEffect from "./components/misc/NebulaEffect";
 
 
 createRoot(document.getElementById("root")!).render(
@@ -42,6 +44,7 @@ export function App(){
       <SectionsList />
       <Header />
       <MainCard />
+      <NebulaEffect />
     </div>
   )
 }

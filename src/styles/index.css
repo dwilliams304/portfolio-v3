@@ -39,6 +39,7 @@ body {
 .site-container  {
   width: 70%;
   margin: 5vh auto;
+  z-index: 25;
 }
 
 /* HIGHLIGHT  PRIMARY COLOR, COLOR ONLY*/
@@ -70,3 +71,4 @@ body {
 .txt-underline-effect:hover::before {
   transform: scaleX(100%);
 }
+

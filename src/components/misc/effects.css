@@ -1,0 +1,27 @@
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: radial-gradient(circle at center, var(--backgroundColor), var(--backgroundColor_Dark));
+    z-index: -50;
+}
+
+.grid {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(to right,
+            rgba(255, 255, 255, 0.1) 0,
+            rgba(255, 255, 255, 0.1) 2px,
+            transparent 2px,
+            transparent 50px),
+        repeating-linear-gradient(to bottom,
+            rgba(255, 255, 255, 0.1) 0,
+            rgba(255, 255, 255, 0.1) 2px,
+            transparent 2px,
+            transparent 50px);
+    animation: warp 10s infinite alternate;
+}

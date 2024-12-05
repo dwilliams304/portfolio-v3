@@ -1,8 +1,11 @@
 /* Header */
+header {
+    width: 100%;
+}
 header h1 {
-    font-size: 5vh;
+    font-size: 40px;
+    width: 100%;
     text-align: center;
-    padding-bottom: 5vh;
     cursor: pointer;
     user-select: none;
 }
@@ -38,8 +41,6 @@ header h1:hover {
     text-align: right;
     font-size: 24px;
     text-transform: uppercase;
-    text-decoration: underline;
-    color: var(--primaryColor);
 }
 
 .sl-list {
@@ -51,9 +52,9 @@ header h1:hover {
     font-size: 18px;
 }
 
-.sl-list li span{
+.sl-list li span {
     cursor: pointer;
-    transition: var(--trs_LONG);
+    transition: var(--trs_MED);
 }
 .sl-list li span:hover {
     color: var(--secondaryColor);
