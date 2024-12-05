@@ -11,12 +11,11 @@ export default function Header(){
 
     return(
         <header>
-            <h1 onClick={() => setRandomHeaderText()}>{headerText}</h1>
+            <h1 onClick={() => setRandomHeaderText()}>
+                {headerText}
+                .<span className="txt-highlight-p-cul">dev</span>
+            </h1>
 
-            <div>
-                <button>Projects</button>
-                <button>About</button>
-            </div>
         </header>
     )
 }

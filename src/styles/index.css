@@ -22,8 +22,8 @@
 
   /* Shadows */
   --shd_SM: none;
-  --shd_MD: var(--backgroundColor_Dark) 0px 48px 100px 0px;;
-  --shd_LG: none;
+  --shd_MD: none;
+  --shd_LG: var(--backgroundColor_Dark) 0px 48px 100px 0px;
 
   /* Transition */
   --trs_SHORT: all 100ms ease-in-out;
@@ -41,6 +41,17 @@ body {
   margin: 5vh auto;
 }
 
+/* HIGHLIGHT  PRIMARY COLOR, COLOR ONLY*/
+.txt-highlight-p-co {
+  color: var(--primaryColor);
+}
+/* HIGHLIGHT PRIMARY COLOR, COLOR W/ UNDERLINE */
+.txt-highlight-p-cul {
+  color: var(--primaryColor);
+  text-decoration: underline;
+}
+
+/* Underline grows from center to edge of text */
 .txt-underline-effect{
   position: relative;
 }
@@ -54,7 +65,7 @@ body {
   border-bottom: 1px solid var(--secondaryColor);
   transform: scaleX(0);
 
-  transition: transform 0.2s ease-in-out;
+  transition: transform 175ms ease-in-out;
 }
 .txt-underline-effect:hover::before {
   transform: scaleX(100%);
