@@ -1,23 +1,40 @@
-/* .cb-hover-area {
+/* Sections List */
+.sl-container {
+    position: absolute;
+    top: 0; left: 0;
+    width: 14%;
+    text-align: right;
+}
+
+.cb-hover-area {
     position: absolute;
     top: 0; left: 0;
     width: 100%;
     height: 12vh;
     background: linear-gradient(180deg, rgba(3,11,11,1) 0%, rgba(0,0,0,0) 100%);
-} */
+
+    display: none;
+}
 
 .cb-container {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
+    position: sticky;
+    width: 70%;
+    margin: 2vh auto 0 auto;
     padding: 5vh 0;
-    top: 2vh;
     display: flex;
     justify-content: space-around;
     backdrop-filter: blur(5px);
-    background: rgba(0, 0, 0, 0.212);
-    border: 1px dashed var(--primaryColor);
+    background: rgba(0, 0, 0, 0.316);
+    border: 1px solid var(--secondaryColor);
     border-radius: 25px;
 
     box-shadow: var(--shd_MD);
+}
+.cb-container select,
+.cb-container button {
+    background: none;
+    border: 1px inset var(--secondaryColor);
+    border-radius: 15px;
+    color: var(--textColor);
+    padding: 10px 25px;
 }
