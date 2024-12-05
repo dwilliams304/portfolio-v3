@@ -1,4 +1,3 @@
-import "../../../styles/components.css";
 
 export default function MainCard(){
     return(
