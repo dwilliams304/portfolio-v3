@@ -21,7 +21,10 @@ import {
   Header, 
   MainCard, 
 } from "./components";
-import NebulaEffect from "./components/misc/NebulaEffect";
+import {
+  Aurora,
+  SpaceGrid
+} from "./components/misc";
 
 
 createRoot(document.getElementById("root")!).render(
@@ -40,11 +43,12 @@ export function App(){
 
   return(
     <div className="site-container">
-      <CustomizationBar />
+      {/* <CustomizationBar /> */}
       <SectionsList />
       <Header />
       <MainCard />
-      <NebulaEffect />
+      {/* <SpaceGrid /> */}
+      <Aurora />
     </div>
   )
 }

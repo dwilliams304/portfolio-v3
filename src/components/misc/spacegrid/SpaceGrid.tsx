@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
-import './effects.css';
+import './spacegrid.css';
 
-export default function NebulaEffect() {
+export default function SpaceGrid() {
     const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
     useEffect(() => {
