@@ -24,6 +24,11 @@
   --shd_SM: none;
   --shd_MD: var(--backgroundColor_Dark) 0px 48px 100px 0px;;
   --shd_LG: none;
+
+  /* Transition */
+  --trs_SHORT: all 100ms ease-in-out;
+  --trs_MED: all 175ms ease-in-out;
+  --trs_LONG: all 300ms ease-in-out;
 }
 
 body {
@@ -33,5 +38,24 @@ body {
 
 .site-container  {
   width: 70%;
-  margin: 0 auto;
+  margin: 5vh auto;
+}
+
+.txt-underline-effect{
+  position: relative;
+}
+.txt-underline-effect::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid var(--secondaryColor);
+  transform: scaleX(0);
+
+  transition: transform 0.2s ease-in-out;
+}
+.txt-underline-effect:hover::before {
+  transform: scaleX(100%);
 }
