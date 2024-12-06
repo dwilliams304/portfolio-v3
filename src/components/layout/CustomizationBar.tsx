@@ -12,7 +12,7 @@ import "./_layouts.css";
 export default function CustomizationBar(){
     const [experience, setExperience] = useState(Experiences[0]);
     const [styles, setStyles] = useState(Styles[experience]);
-    
+
     const onChange = (e: any) => {
         const {name, value} = e.target;
         if(name === "experience"){

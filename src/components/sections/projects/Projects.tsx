@@ -1,11 +1,15 @@
-import { DummyProjectData } from "../../../data/DummyProjectData";
+import { Project } from "../../../data/types";
 import ProjectCard from "./ProjectCard";
 
-export default function Projects(){
+type ProjectsProps = {
+    projects: Project[];
+}
+
+export default function Projects(props: ProjectsProps){
     return(
         <div className="projects">
             {
-                DummyProjectData.map(proj => (
+                props.projects.map(proj => (
                     <ProjectCard 
                         project={proj}
                         key={proj.projectName}

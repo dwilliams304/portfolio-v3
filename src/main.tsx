@@ -35,7 +35,7 @@ createRoot(document.getElementById("root")!).render(
 
 
 export function App(){
-  const [projects, setProjects] = useState<Project[]>([]);
+  const [projects, setProjects] = useState<Project[]>(DummyProjectData);
 
   useEffect(() => {
     setProjects(DummyProjectData);
@@ -47,7 +47,7 @@ export function App(){
       <SectionsList />
       <Header />
       <AboutCard />
-      <Projects />
+      <Projects projects={projects}/>
       <SpaceGrid />
       {/* <Aurora /> */}
     </div>

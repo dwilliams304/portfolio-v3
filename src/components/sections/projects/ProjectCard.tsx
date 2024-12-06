@@ -6,6 +6,7 @@ type ProjectCardProps = {
 }
 
 export default function ProjectCard({project}: ProjectCardProps){
+    
     return(
         <div>
             <p>{project.projectName}</p>
@@ -13,7 +14,7 @@ export default function ProjectCard({project}: ProjectCardProps){
             <p>{project.projectDescription}</p>
             <div>
                 {project.techUsed.map(tech => (
-                    <span key={tech}>{IconMapper[tech]}</span>
+                    <span key={tech}>{IconMapper[tech as keyof typeof IconMapper]}</span>
                 ))}
             </div>
         </div>
