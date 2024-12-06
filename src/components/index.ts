@@ -1,11 +1,13 @@
 import Header from "./layout/Header";
-import MainCard from "./sections/about/MainCard";
+import AboutCard from "./sections/about/AboutCard";
 import SectionsList from "./layout/SectionsList";
 import CustomizationBar from "./layout/CustomizationBar";
+import Projects from "./sections/projects/Projects";
 
 export {
     Header,
-    MainCard,
+    AboutCard,
+    Projects,
     SectionsList,
     CustomizationBar
 }

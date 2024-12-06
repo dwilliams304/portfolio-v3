@@ -5,7 +5,6 @@ import { StrictMode,
 import { createRoot } from "react-dom/client";
 import "./styles/reset.css";
 import "./styles/index.css";
-import "./styles/sections.css";
 
 import { 
   Project 
@@ -19,7 +18,8 @@ import {
   CustomizationBar,
   SectionsList,
   Header, 
-  MainCard, 
+  AboutCard, 
+  Projects,
 } from "./components";
 import {
   Aurora,
@@ -46,9 +46,10 @@ export function App(){
       {/* <CustomizationBar /> */}
       <SectionsList />
       <Header />
-      <MainCard />
-      {/* <SpaceGrid /> */}
-      <Aurora />
+      <AboutCard />
+      <Projects />
+      <SpaceGrid />
+      {/* <Aurora /> */}
     </div>
   )
 }
