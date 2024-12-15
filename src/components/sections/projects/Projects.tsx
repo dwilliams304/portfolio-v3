@@ -1,5 +1,6 @@
 import { Project } from "../../../data/types";
 import ProjectCard from "./ProjectCard";
+import "./projects.css";
 
 type ProjectsProps = {
     projects: Project[];

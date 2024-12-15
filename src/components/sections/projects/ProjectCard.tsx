@@ -8,13 +8,13 @@ type ProjectCardProps = {
 export default function ProjectCard({project}: ProjectCardProps){
     
     return(
-        <div>
-            <p>{project.projectName}</p>
-            <img src={project.projectImg} />
-            <p>{project.projectDescription}</p>
-            <div>
+        <div className="prj-card">
+            <p className="prj-name">{project.projectName}</p>
+            <img src={project.projectImg} className="prj-img"/>
+            <p className="prj-desc">{project.projectDescription}</p>
+            <div className="prj-tech-container">
                 {project.techUsed.map(tech => (
-                    <span key={tech}>{IconMapper[tech as keyof typeof IconMapper]}</span>
+                    <span key={tech} className="prj-tech">{IconMapper[tech as keyof typeof IconMapper]}</span>
                 ))}
             </div>
         </div>

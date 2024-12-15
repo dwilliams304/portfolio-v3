@@ -1,0 +1,6 @@
+.prj-card {
+    width: 100%;
+    background-color: var(--primaryColor);
+    display: flex;
+    justify-content: space-between;
+}

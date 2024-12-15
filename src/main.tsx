@@ -35,7 +35,7 @@ createRoot(document.getElementById("root")!).render(
 
 
 export function App(){
-  const [projects, setProjects] = useState<Project[]>(DummyProjectData);
+  const [projects, setProjects] = useState<Project[]>([]);
 
   useEffect(() => {
     setProjects(DummyProjectData);
