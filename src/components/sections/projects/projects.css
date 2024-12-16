@@ -1,6 +1,32 @@
+.projects {
+    display: flex; flex-direction: column;
+    gap: 20px;
+}
+
 .prj-card {
     width: 100%;
-    background-color: var(--primaryColor);
-    display: flex;
-    justify-content: space-between;
+    background-color: var(--backgroundColor_Dark);
+}
+
+.prj-card-content {
+    display: flex; justify-content: space-between;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+.prj-name {
+    width: 25%;
+}
+
+.prj-img {
+    width: 12%;
+}
+
+.prj-desc {
+    width: 63%;
+}
+
+.prj-tech-container {
+    position: absolute;
+    display: none;
 }
