@@ -1,11 +1,12 @@
 .ab-card {
-    margin: 2rem auto;
+    width: 100%;
 }
 
 .ab-card-content {
     display: flex;
     padding: 2rem;
-    width: 100%;
+    width: 75%;
+    margin: 0 auto;
 }
 
 .ab-card:nth-child(1) {

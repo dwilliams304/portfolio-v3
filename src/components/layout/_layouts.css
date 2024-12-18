@@ -27,7 +27,7 @@ header h1:hover {
 
 /* Sections List */
 .sl-container {
-    position: absolute;
+    position: fixed;
     top: 15vh; left: 0;
     width: 13%;
 

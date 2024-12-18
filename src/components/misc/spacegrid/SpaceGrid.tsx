@@ -12,7 +12,13 @@ export default function SpaceGrid() {
         const particles: { x: number; y: number; vx: number; vy: number }[] = [];
         const particleCount = 50;
 
+        const setCanvasSize = () => {
+            canvas.width = window.innerWidth;
+            canvas.height = document.body.scrollHeight; // Match canvas height to the full document height
+        };
+
         const initParticles = () => {
+            particles.length = 0; // Clear particles to prevent duplicates
             for (let i = 0; i < particleCount; i++) {
                 particles.push({
                     x: Math.random() * canvas.width!,
@@ -43,12 +49,52 @@ export default function SpaceGrid() {
             requestAnimationFrame(drawParticles);
         };
 
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-
+        // Initialize canvas size and particles
+        setCanvasSize();
         initParticles();
         drawParticles();
+
+        // Update canvas size on window resize
+        window.addEventListener('resize', () => {
+            setCanvasSize();
+            initParticles(); // Reinitialize particles after resizing
+        });
+
+        return () => {
+            window.removeEventListener('resize', setCanvasSize);
+        };
     }, []);
+
+    useEffect(() => {
+        const updateBackgroundHeight = () => {
+            const background = document.querySelector('.background') as HTMLDivElement;
+            const grid = document.querySelector('.grid') as HTMLDivElement;
+            const docHeight = Math.max(
+                document.documentElement.scrollHeight,
+                document.body.scrollHeight,
+                document.documentElement.offsetHeight,
+                document.body.offsetHeight,
+                document.documentElement.clientHeight
+            );
+    
+            if (background) background.style.height = `${docHeight}px`;
+            if (grid) grid.style.height = `${docHeight}px`;
+    
+            if (canvasRef.current) {
+                const canvas = canvasRef.current;
+                canvas.width = window.innerWidth;
+                canvas.height = docHeight;
+            }
+        };
+    
+        updateBackgroundHeight();
+        window.addEventListener('resize', updateBackgroundHeight);
+    
+        return () => {
+            window.removeEventListener('resize', updateBackgroundHeight);
+        };
+    }, []);
+    
 
     return (
         <div className="background">
@@ -56,4 +102,4 @@ export default function SpaceGrid() {
             <canvas ref={canvasRef} />
         </div>
     );
-};
+}
