@@ -10,8 +10,8 @@ export default function ProjectCard({project}: ProjectCardProps){
     return(
         <div className="prj-card">
             <div className="prj-card-content">
-                <p className="prj-name">{project.projectName}</p>
                 <img src={project.projectImg} className="prj-img"/>
+                <p className="prj-name">{project.projectName}</p>
                 <p className="prj-desc">{project.projectDescription}</p>
                 <div className="prj-tech-container">
                     {project.techUsed.map(tech => (
