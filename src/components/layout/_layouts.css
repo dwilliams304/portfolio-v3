@@ -2,6 +2,7 @@
 header {
     width: 100%;
 }
+
 header h1 {
     font-size: 40px;
     width: 100%;
@@ -9,17 +10,21 @@ header h1 {
     cursor: pointer;
     user-select: none;
 }
+
 header h1:hover {
     animation: header-hover 500ms infinite;
 }
-@keyframes header-hover{
-    0%{ 
-        transform: scale(1); 
+
+@keyframes header-hover {
+    0% {
+        transform: scale(1);
     }
-    50%{ 
-        transform: scale(1.1); 
+
+    50% {
+        transform: scale(1.1);
     }
-    100%{ 
+
+    100% {
         transform: scale(1);
     }
 }
@@ -28,10 +33,11 @@ header h1:hover {
 /* Sections List */
 .sl-container {
     position: fixed;
-    top: 15vh; left: 0;
+    top: 15vh;
+    left: 0;
     width: 13%;
-
-    display: flex; flex-direction: column;
+    display: flex;
+    flex-direction: column;
     gap: 10px 0;
 }
 
@@ -42,7 +48,8 @@ header h1:hover {
 }
 
 .sl-list {
-    display: flex; flex-direction: column;
+    display: flex;
+    flex-direction: column;
     text-transform: uppercase;
     text-align: right;
     margin-left: auto;
@@ -54,20 +61,49 @@ header h1:hover {
     cursor: pointer;
     transition: var(--trs_MED);
 }
+
 .sl-list li span:hover {
     color: var(--secondaryColor);
 }
 
 
+/* Customization Bar Toggle Button */
+.cb-toggle-button {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--backgroundColor);
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    z-index: 100;
+    transition: transform 0.3s ease;
+}
+
+.cb-toggle-button.open span {
+    transform: rotate(180deg);
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+
 /* Customization Bar */
 .cb-hover-area {
-    position: absolute;
-    top: 0; left: 0;
+    position: fixed;
+    top: -300px;
+    /* Initially hidden above viewport */
+    left: 0;
     width: 100%;
-    height: 12vh;
-    /* background: linear-gradient(180deg, rgba(3,11,11,1) 0%, rgba(0,0,0,0) 100%); */
+    transition: top 0.4s ease;
+    z-index: 99;
+}
 
-    /* display: none; */
+.cb-hover-area.open {
+    top: 40px;
+    /* Slide down below toggle button */
 }
 
 .cb-container {
@@ -81,15 +117,16 @@ header h1:hover {
     background: rgba(0, 0, 0, 0.316);
     border: 2px solid var(--primaryColor);
     border-radius: 25px;
-
     box-shadow: var(--shd_LG);
 }
+
 .cb-container div label {
     display: block;
     text-align: center;
     padding-bottom: 6px;
     font-size: 22px;
 }
+
 .cb-container select,
 .cb-container button {
     background: none;

@@ -43,7 +43,7 @@ export function App(){
 
   return(
     <div className="site-container">
-      {/* <CustomizationBar /> */}
+      <CustomizationBar />
       <SectionsList />
       <Header />
       <AboutCard />
