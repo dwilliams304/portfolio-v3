@@ -1,3 +1,5 @@
+import "./layout.css";
+
 export default function SectionsList(){
     return(
         <div className="sl-container">

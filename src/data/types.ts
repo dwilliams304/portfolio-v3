@@ -8,27 +8,27 @@ export type Project = {
 }
 
 
-const Brevities = ["Qck", "Brief", "Normal", "More Text", "Super Long Winded"] as const;
-const Experiences = ["Default", "Game"] as const;
+// const Brevities = ["Qck", "Brief", "Normal", "More Text", "Super Long Winded"] as const;
+// const Experiences = ["Default", "Game"] as const;
 
-const Styles = {
-    Default: [
-        "Space",
-        "Retro",
-        "Shopping",
-        "Music Platform",
-        "Modern",
-        "Minimal",
-        "Grid"
-    ],
-    Game: [
-        "Mystery",
-        "Shooter"
-    ]
-}
+// const Styles = {
+//     Default: [
+//         "Space",
+//         "Retro",
+//         "Shopping",
+//         "Music Platform",
+//         "Modern",
+//         "Minimal",
+//         "Grid"
+//     ],
+//     Game: [
+//         "Mystery",
+//         "Shooter"
+//     ]
+// }
 
-export {
-    Brevities,
-    Experiences,
-    Styles
-}
+// export {
+//     Brevities,
+//     Experiences,
+//     Styles
+// }

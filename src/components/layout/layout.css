@@ -1,0 +1,68 @@
+/* Header */
+header {
+    width: 100%;
+}
+
+header h1 {
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+header h1:hover {
+    animation: header-hover 500ms infinite;
+}
+
+@keyframes header-hover {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* Sections List */
+.sl-container {
+    position: fixed;
+    top: 15vh;
+    left: 0;
+    width: 13%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+}
+
+.sl-header {
+    text-align: right;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.sl-list {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    text-align: right;
+    margin-left: auto;
+    gap: 5px 0;
+    font-size: 18px;
+}
+
+.sl-list li span {
+    cursor: pointer;
+    transition: var(--trs_MED);
+}
+
+.sl-list li span:hover {
+    color: var(--secondaryColor);
+}
+

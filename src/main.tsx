@@ -15,16 +15,12 @@ import {
 } from "./data/DummyProjectData";
 
 import { 
-  CustomizationBar,
   SectionsList,
   Header, 
   AboutCard, 
   Projects,
 } from "./components";
-import {
-  Aurora,
-  SpaceGrid
-} from "./components/misc";
+
 
 
 createRoot(document.getElementById("root")!).render(
@@ -43,13 +39,10 @@ export function App(){
 
   return(
     <div className="site-container">
-      <CustomizationBar />
       <SectionsList />
       <Header />
       <AboutCard />
       <Projects projects={projects}/>
-      <SpaceGrid />
-      {/* <Aurora /> */}
     </div>
   )
 }
